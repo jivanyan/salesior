@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html>
+<head><title>Commerce</title>
+        <body>
+                <h1>This is the home page of the commerce social network.</h1>
+                <a href="/login/">Login</a>
+		<p>OR</p>
+                <a href = /facebook/connect/>Login with Facebook</a>
+
+                <br/> 
+                <br/>
+                You can register either as user or as business!!
+                {{boldmessage }} </strong><br>
+                <a href = "/signup/patron/"> Sign Up as user </a>
+                <p>OR</p>
+                <a href = "/signup/venue/"> Sign Up as business</a></br>
+		<form action="javascript:sendMail();" name="pmForm" id="pmForm" method="post">
+		Enter Friend's Email:
+		<input name="pmSubject" id="pmSubject" type="text" maxlength="64" style="width:98%;" />
+		<input name="pmSubmit" type="submit" value="Invite" />
+                   
+                <img src = "{% static "logo.jpg" %}" alt = " The LOGO of SALEOID should be here" />
+        </body>
+
+</html>
+~                                                                               
+                

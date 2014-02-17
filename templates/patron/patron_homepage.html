@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homepage</title>
+    </head>
+
+    <body>
+        <h1>Patron HomePage</h1>
+	<p><strong>{{ user.username }}</strong></p>
+	{% if friendlist %}
+		<ol>
+			{% for friend in friendlist %}
+                	<li>{{ friend.name }}</li>                
+			{% endfor %}
+		</ol>
+        {% else %}
+		<strong> There are no friends </strong>
+	{% endif %}
+    </body>
+</html>    

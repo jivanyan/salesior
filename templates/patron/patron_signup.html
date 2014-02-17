@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Patron Registration</title>
+    </head>
+
+    <body>
+        <h1>Patron Registration</h1>
+
+        {% if registered %}
+        <strong>thank you for registering!</strong>
+        <a href="/">Return to the homepage.</a><br />
+        {% else %}
+        Saleoid says: <strong>register here!</strong><br />
+
+        <form id="user_form" method="post" action="/signup/patron/"
+                enctype="multipart/form-data">
+
+            {% csrf_token %}
+
+	    {{ user_form.as_p }}
+            {{ profile_form.as_p }}
+
+            <!-- Provide a button to click to submit the form. -->
+            <input type="submit" name="submit" value="Sign Up" />
+        </form>
+        {% endif %}
+    </body>
+</html>
+
+
+

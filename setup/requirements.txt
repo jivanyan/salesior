@@ -1,0 +1,7 @@
+-e git+https://github.com/django/django.git@a739573e178694cf2c4ad77b57fbc7e90c1c5d55#egg=Django-origin/HEAD
+ipython==1.1.0
+oauthlib==0.6.0
+phonenumbers==5.9b1
+python3-openid==3.0.2
+requests==2.0.1
+requests-oauthlib==0.4.0
